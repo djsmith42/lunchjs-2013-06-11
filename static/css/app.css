@@ -1,3 +1,34 @@
+/* Animation Styles */
+
+.slide-enter-setup, .slide-leave-setup {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+     -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+       -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+          transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.slide-enter-setup {
+  position: absolute;
+  top: -500px;
+}
+
+.slide-enter-start {
+  top: 0;
+}
+
+.slide-leave-setup {
+  position: absolute;
+  top: 0;
+}
+
+.slide-leave-start {
+  top: 500px;
+}
+
+
+
+/* Boler plate */
+
 html, body {
     background: url("/static/img/bg.jpg");
     font-family: Helvetica;
@@ -29,6 +60,7 @@ h1 {
 #slideshow ul {
     position: absolute;
     margin: 0;
+    padding: 0;
     border-right: 1px solid #ccc;
     left: 0;
     top: 0;
@@ -42,27 +74,5 @@ h1 {
     margin-top: 34px;
 }
 
-.slide-enter-setup, .slide-leave-setup {
-  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-     -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-       -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-          transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-}
 
-.slide-enter-setup {
-  position: absolute;
-  top: -500px;
-}
 
-.slide-enter-start {
-  top: 0;
-}
-
-.slide-leave-setup {
-  position: absolute;
-  top: 0;
-}
-
-.slide-leave-start {
-  top: 500px;
-}
