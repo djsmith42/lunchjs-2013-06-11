@@ -1,3 +1,7 @@
+html, body {
+    background: url("/static/img/bg.jpg");
+}
+
 h1 {
     text-align: center;
     margin-bottom: 50px;
@@ -6,6 +10,8 @@ h1 {
 #slideshow {
     width: 800px;
     height: 508px;
+    background: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
     border: 1px solid #ccc;
     border-radius: 12px;
     position: relative;
