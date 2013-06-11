@@ -1,5 +1,6 @@
 html, body {
     background: url("/static/img/bg.jpg");
+    font-family: Helvetica;
 }
 
 h1 {
