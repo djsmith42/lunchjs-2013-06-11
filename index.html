@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html ng-app="MyApp">
+<head>
+  <title>ng-animate slideshow</title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/app.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+  <script src="/static/js/app.js"></script> 
+</head>
+
+<body>
+  <div ng-controller="MyController">
+    <h1>ng-animate</h1>
+    <div id="slideshow">
+      <div id="slides" ng-switch="imageToShow" ng-animate="'slide'">
+        <img ng-switch-when="1" src="/static/img/1.png" />
+        <img ng-switch-when="2" src="/static/img/2.png" />
+        <img ng-switch-when="3" src="/static/img/3.png" />
+      </div>
+      <ul>
+        <li><a href="#1" ng-click="showImage(1)"><img src="/static/img/1.thumb.png" /></a></li>
+        <li><a href="#2" ng-click="showImage(2)"><img src="/static/img/2.thumb.png" /></a></li>
+        <li><a href="#3" ng-click="showImage(3)"><img src="/static/img/3.thumb.png" /></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
