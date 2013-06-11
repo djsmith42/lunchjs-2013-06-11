@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div ng-controller="MyController">
+  <div ng-controller="MyController" ng-init="imageToShow = 1">
     <h1>I can has ng-animatez?</h1>
     <div id="slideshow">
       <div id="slides" ng-switch="imageToShow" ng-animate="'slide'">
@@ -17,9 +17,9 @@
         <img ng-switch-when="3" src="/static/img/3.png" />
       </div>
       <ul>
-        <li><a href="#" ng-click="showImage(1)"><img src="/static/img/1.thumb.png" /></a></li>
-        <li><a href="#" ng-click="showImage(2)"><img src="/static/img/2.thumb.png" /></a></li>
-        <li><a href="#" ng-click="showImage(3)"><img src="/static/img/3.thumb.png" /></a></li>
+        <li><a href="#" ng-click="imageToShow = 1"><img src="/static/img/1.thumb.png" /></a></li>
+        <li><a href="#" ng-click="imageToShow = 2"><img src="/static/img/2.thumb.png" /></a></li>
+        <li><a href="#" ng-click="imageToShow = 3"><img src="/static/img/3.thumb.png" /></a></li>
       </ul>
     </div>
   </div>
